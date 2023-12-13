@@ -30,7 +30,7 @@ class _InputFieldState extends State<InputField> {
           child: Padding(
             padding: const EdgeInsets.fromLTRB(16, 0, 0, 0),
             child: TextField(
-              keyboardType: TextInputType.name,
+              keyboardType: widget.typeOfInput,
               obscureText: widget.hideInformation,
               decoration: InputDecoration(
                 border: InputBorder.none,

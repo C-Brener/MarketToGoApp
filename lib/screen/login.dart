@@ -36,7 +36,9 @@ class Login extends StatelessWidget {
                       ),
                       const Padding(
                         padding: EdgeInsets.fromLTRB(0, 28, 0, 0),
-                        child: Welcome(),
+                        child: Welcome(
+                          
+                        ),
                       ),
                       const Padding(
                         padding: EdgeInsets.fromLTRB(2.5, 8.0, 91, 0),
@@ -48,7 +50,7 @@ class Login extends StatelessWidget {
                           textButton: 'CADASTRE-SE',
                           onClick: () {
                             showBottomSheet(context: context, builder: (context){
-                              return RegisterForm();
+                              return const RegisterForm();
                             });
                           },
                         ),
