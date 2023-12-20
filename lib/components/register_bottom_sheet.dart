@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:market_to_go/components/input_field.dart';
 import 'package:market_to_go/components/primary_button.dart';
-import 'package:market_to_go/models/register_model.dart';
+import 'package:market_to_go/data/models/register_model.dart';
 import 'package:market_to_go/screen/main_page.dart';
 
 class RegisterForm extends StatefulWidget {
@@ -83,7 +83,6 @@ class _RegisterFormState extends State<RegisterForm> {
                       confirmPassword: confirmPassword,
                       password: password
                     );
-                    print("Testando ${registerModel?.email}");
                     Navigator.push(context, MaterialPageRoute(builder: ((context) => const MainPage())));
                   },
                   textButton: "Concluir"
